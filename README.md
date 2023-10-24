@@ -24,12 +24,15 @@ sudo apt-get install bridge-utils
 4.	Open /etc/network/interfaces and change it sudo gedit /etc/network/interfaces and type the following
 
 auto lo
+
 iface lo inet loopback
 
 auto xenbr0
+
 iface xenbr0 inet dhcp bridge_ports eth0
 
 auto eth0
+
 iface eth0 inet manual
 
 Then restart network manager
@@ -45,12 +48,19 @@ Now restart your system.
 6.	Open virtual machine manager and then start creating your virtual machines.
 
 •	Click on create a new virtual machine icon.
+
 •	Enter new VM name and select the process of installing OS.
+
 (local media/network install/network boot/import existing disk image)
+
 •	Locate your media for installing OS either through CD-ROM, or ISO image along with OS type and version.
+
 •	Choose Memory and CPU settings by specifying RAM size and number of CPUs.
+
 •	Enable the storage of the VM by specifying disk size.
+
 •	Now the OS is ready to begin it’s installation process in your VM.
+
 7.	Now the VM is ready with the specified OS installed within it.
 
 
